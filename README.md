@@ -69,16 +69,33 @@ Details and source file pointers are in `08-projects-and-interview/MUST-DO-PROJE
 
 ---
 
-## Setup
+## Setup (uv)
+
+This repo is designed to work with [uv](https://docs.astral.sh/uv/) for fast, reliable dependency management.
 
 ```bash
-python -m venv .venv
-source .venv/bin/activate  # or .venv\Scripts\activate on Windows
-pip install langchain langgraph langchain-community langchain-openai
-# Add more as needed per notebook
+# Install uv if you don't have it: https://docs.astral.sh/uv/getting-started/installation/
+
+# From the repo root
+uv sync
+cp .env.example .env   # then fill in your API keys
+
+# Run notebooks or scripts
+uv run jupyter lab
+# or
+uv run python some_script.py
+```
+
+**Windows PowerShell:**
+```powershell
+uv sync
+copy .env.example .env
+uv run jupyter lab
 ```
 
 Use `.env` for API keys. Never hardcode them.
+
+Add packages as needed with `uv add package-name`.
 
 ---
 
