@@ -19,17 +19,26 @@
 
 10. How does tool calling work?
 11. What is Agentic RAG? How is it different from standard RAG?
-12. Explain Corrective RAG.
+12. Explain Corrective RAG (CRAG) vs Self-RAG.
 13. How do you evaluate an agentic system?
 14. How do you prevent infinite loops in agents?
 
+## Multi-Agent & Frameworks
+
+15. CrewAI sequential vs hierarchical?
+16. What is a Deep Agent and when would you use it?
+17. Difference between LangGraph, CrewAI, and Deep Agents?
+
 ## Production & Advanced
 
-15. What is Human-in-the-Loop and when do you use it?
-16. What is MCP and why is it useful?
-17. How would you add observability to an agent?
-18. Difference between workflows and autonomous agents?
-19. How do you control cost and latency in agent systems?
-20. What guardrails would you put around a production agent?
+18. What is Human-in-the-Loop and when do you use it?
+19. What is MCP and why is it useful?
+20. How would you add observability to an agent?
+21. Difference between workflows and autonomous agents?
+22. How do you control cost and latency in agent systems?
+23. What guardrails would you put around a production agent?
+24. How do you design least-privilege tools for a production agent (e.g., SQL + vector + API)?
 
 **Practice tip:** Answer out loud. Draw the graph. Explain trade-offs.
+
+Full interview set: [makan_m/learning-concepts/15-interview-questions.md](https://github.com/yash9614/makan_m/blob/main/learning-concepts/15-interview-questions.md)
