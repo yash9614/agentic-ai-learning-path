@@ -1,20 +1,28 @@
-# Concept Glossary
+# Concept Glossary — Agentic AI
 
 | Term | Meaning |
 |------|---------|
-| **Agent** | System that reasons and takes actions using tools |
-| **Agentic AI** | AI systems with agency (planning, iteration, tool use, memory) |
-| **ReAct** | Reason + Act loop |
-| **StateGraph** | LangGraph's core abstraction for workflows |
-| **Node** | A step / function in the graph |
-| **Conditional Edge** | Routing based on current state |
-| **Tool Calling** | LLM requests execution of an external function |
-| **Agentic RAG** | RAG with decision loops (grade, rewrite, retrieve) |
-| **Corrective RAG** | Specific pattern that checks and corrects retrieval |
-| **HITL** | Human-in-the-Loop — pause for human approval |
-| **Checkpoint** | Saved state so the agent can resume |
-| **MCP** | Model Context Protocol — standard for tool servers |
-| **Workflow** | Predefined multi-step process (less autonomous than agent) |
-| **Router** | Component that chooses which path or tool to use |
+| **Agent** | LLM + tools + decision loop (brain + hands) |
+| **ReAct** | Reason → Act → Observe loop |
+| **LangGraph** | Explicit state graph (nodes, edges, conditional routing, checkpointers) |
+| **State** | Shared data structure nodes read/write |
+| **Node** | Function that returns a partial state update |
+| **Conditional Edge** | Router that decides next node |
+| **Checkpointer** | Persists state for memory and HITL |
+| **CrewAI** | Role-based multi-agent (Agent + Task + Crew + Process) |
+| **Deep Agents** | Opinionated harness (planning, filesystem, subagents) on LangChain + LangGraph |
+| **Agentic RAG** | Agent controls retrieval (decide, decompose, re-retrieve) |
+| **CRAG** | Grades retrieval and corrects (rewrite / web search) |
+| **Self-RAG** | Model decides whether to retrieve and critiques its own answer |
+| **MCP** | Standard protocol for tool servers |
+| **HITL** | Human-in-the-loop via interrupts |
+| **Harness** | Guardrails, step limits, validation, observability around the model |
 
-Cross-reference the detailed module READMEs for deeper explanations.
+## Stack Layers
+
+- LangGraph = runtime
+- LangChain = framework
+- Deep Agents = harness
+- CrewAI = role-based team abstraction
+
+Deeper notes: [makan_m/learning-concepts](https://github.com/yash9614/makan_m/tree/main/learning-concepts) (modules 10–20)
