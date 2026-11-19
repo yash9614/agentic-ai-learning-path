@@ -17,6 +17,17 @@ Variants you will see:
 - Adaptive RAG
 - Self-reflective RAG
 
+## Course Mapping (Telusko)
+
+Production RAG progression lives in these folders:
+- `Embeddings and Vector Stores 26-09-2026`
+- `RAG Fundamentals and Production Techniques 27-09-2026`
+- `RAG Evaluation and Production Techniques 03-10-2026`
+- `Building a Complete RAG Application 04-10-2026`
+- `Secure Enterprise RAG Assistant 10-10-2026`
+
+These cover hybrid search, metadata filters, reranking, corrective/adaptive patterns, citation, and evaluation.
+
 ## Key Notebooks
 
 - `1-AgenticRAG.ipynb`
@@ -33,7 +44,8 @@ Variants you will see:
 3. How do you grade documents for relevance?
 4. When would you rewrite a query vs fall back to web search?
 5. How do you prevent infinite retrieval loops?
+6. What evaluation metrics matter for an agentic RAG system?
 
 ## Must-Do
 
-Implement a grade → rewrite → retrieve loop. Compare answer quality to simple RAG.
+Implement a grade → rewrite → retrieve loop. Compare answer quality to simple RAG. Optionally add hybrid search or reranking from the production RAG folders.
