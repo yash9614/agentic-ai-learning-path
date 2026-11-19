@@ -14,30 +14,38 @@
 7. How do you manage state in LangGraph?
 8. How do you handle persistence and checkpoints?
 9. What are common ways agents can fail in a graph?
+10. What happens when parallel nodes write the same field? How do reducers work?
+11. Difference between attaching a subgraph as a node vs calling it with invoke?
+12. What is the difference between `Command(goto=...)` and a normal edge?
+13. How does `Send` enable map-reduce style fan-out?
+14. How do you create dynamic nodes or conditional edges?
 
 ## Tool Calling & RAG
 
-10. How does tool calling work?
-11. What is Agentic RAG? How is it different from standard RAG?
-12. Explain Corrective RAG (CRAG) vs Self-RAG.
-13. How do you evaluate an agentic system?
-14. How do you prevent infinite loops in agents?
+15. How does tool calling work?
+16. What is Agentic RAG? How is it different from standard RAG?
+17. Explain Corrective RAG (CRAG) vs Self-RAG.
+18. How do you evaluate an agentic system?
+19. How do you prevent infinite loops in agents?
 
 ## Multi-Agent & Frameworks
 
-15. CrewAI sequential vs hierarchical?
-16. What is a Deep Agent and when would you use it?
-17. Difference between LangGraph, CrewAI, and Deep Agents?
+20. CrewAI sequential vs hierarchical?
+21. What is a Deep Agent and when would you use it?
+22. Difference between LangGraph, CrewAI, and Deep Agents?
 
 ## Production & Advanced
 
-18. What is Human-in-the-Loop and when do you use it?
-19. What is MCP and why is it useful?
-20. How would you add observability to an agent?
-21. Difference between workflows and autonomous agents?
-22. How do you control cost and latency in agent systems?
-23. What guardrails would you put around a production agent?
-24. How do you design least-privilege tools for a production agent (e.g., SQL + vector + API)?
+23. What is Human-in-the-Loop and when do you use it?
+24. How do you handle two interrupts that fire in the same step?
+25. Can an interrupt live inside a tool? When is that useful?
+26. Why SQLite checkpointer over in-memory for production HITL?
+27. What is MCP and why is it useful?
+28. How would you add observability to an agent?
+29. Difference between workflows and autonomous agents?
+30. How do you control cost and latency in agent systems?
+31. What guardrails would you put around a production agent?
+32. How do you design least-privilege tools for a production agent (e.g., SQL + vector + API)?
 
 **Practice tip:** Answer out loud. Draw the graph. Explain trade-offs.
 
