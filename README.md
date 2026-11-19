@@ -38,6 +38,8 @@ Work the folders in order. Each has a detailed README with concepts, what to stu
 
 **Updated with Telusko Advance LangGraph (Nov 2026):** memory management, subgraphs (as node or invoke), Commands, Send/map-reduce, dynamic nodes/edges, parallel interrupts, interrupts inside tools, and the dedicated agents project (tools, recursion, streaming).
 
+**Session map:** See [reference/TELUSKO-SESSION-MAP.md](reference/TELUSKO-SESSION-MAP.md) for the explicit mapping of every Telusko session folder to these stages.
+
 ---
 
 ## Must-Do Projects (Priority Order)
@@ -113,7 +115,7 @@ Add packages as needed with `uv add package-name`.
 3. Complete the Must-Do Projects.
 4. Practice the interview questions out loud.
 5. Cross-reference the RAG and GenAI repos for deeper foundations.
-6. For the latest Telusko code, see the course repo session folders (especially Advance LangGraph 14/15-11-2026).
+6. For the latest Telusko code, see the course repo session folders and the [session map](reference/TELUSKO-SESSION-MAP.md).
 
 Start with `01-foundations-agents/README.md`.
 
