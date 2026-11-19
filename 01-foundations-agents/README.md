@@ -12,6 +12,15 @@ Systems that exhibit agency: planning, multi-step reasoning, tool use, self-corr
 - Generative AI = produce content  
 - Agentic AI = decide *what to do* next, act, observe, and iterate
 
+**The agent loop**  
+think → act (tool or subgraph) → observe → think again  
+(until a stop condition, step limit, or human interrupt)
+
+## Course Mapping (Telusko)
+
+- Early sessions: `Calling Your First LLM`, `Python Gaps for AI`, `Data Modeling with Pydantic`
+- Agent mindset appears throughout the LangGraph and agents projects
+
 ## What to Study
 
 - PDF: `1-+AI+agents+vs+agentic+AI.pdf` (in original dump)
@@ -28,7 +37,8 @@ Original repo: [D-Downloads-sagenic-ri-btcamp-with-alngjraph-and-raghen](https:/
 3. Why do agents need tools?
 4. What are the main components of a modern agent (brain, memory, tools, planning)?
 5. When would you use a simple chain vs a full agent?
+6. What stops an agent from running forever?
 
 ## Must-Learn Takeaway
 
-Agents are not magic. They are loops: think → act → observe → think again.
+Agents are not magic. They are loops: think → act → observe → think again, with explicit control over when to stop or ask a human.
