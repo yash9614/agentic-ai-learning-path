@@ -1,42 +1,51 @@
 # Must-Do Projects
 
-Complete these in order. They map directly to common interview expectations.
+Complete these in order. They map directly to common interview expectations and the Telusko course progression.
 
 ## 1. Simple State Graph
 **Goal:** Master LangGraph fundamentals.  
-**Source:** `1-simplegraph.ipynb`  
+**Source:** Telusko programs 1–6 or `1-simplegraph.ipynb`  
 **Deliverable:** A working graph with at least one conditional edge.
 
-## 2. ReAct Tool-Calling Agent
+## 2. Parallel + Reducer Graph
+**Goal:** Understand parallel nodes and merging.  
+**Source:** Telusko programs 7, 11–15  
+**Deliverable:** Fan-out to 2–3 nodes that write the same field via a reducer.
+
+## 3. ReAct Tool-Calling Agent
 **Goal:** Production-style agent with tools.  
-**Source:** `7-ReActAgents.ipynb` + multi-tool chatbot notebooks  
+**Source:** Telusko agents project (`2_agents_with_tools.py`, `3_agent_with_multiple_tools.py`) or original ReAct notebooks  
 **Deliverable:** Agent that uses 2+ tools and stops correctly.
 
-## 3. Agentic / Corrective RAG
+## 4. Agentic / Corrective RAG
 **Goal:** Retrieval that can self-correct.  
-**Source:** `1-AgenticRAG.ipynb`, `2-CorrectiveRAG.ipynb`, `4-AdaptiveRAG.ipynb`  
+**Source:** Original agentic/corrective RAG notebooks  
 **Deliverable:** Grade → rewrite → re-retrieve loop.
 
-## 4. Human-in-the-Loop Agent
+## 5. Human-in-the-Loop Agent
 **Goal:** Safe agents.  
-**Source:** `1-Humanintheloop.ipynb`  
-**Deliverable:** Approval gate on a sensitive action.
+**Source:** Telusko programs 16–23 (including parallel interrupts and tool interrupts)  
+**Deliverable:** Approval gate on a sensitive action, preferably with SqliteSaver so it survives restart.
 
-## 5. Routing Agent / Multi-Source
+## 6. Subgraph Workflow
+**Goal:** Composition.  
+**Source:** Telusko programs 24–30  
+**Deliverable:** Parent graph that embeds or invokes a subgraph (optionally with HITL inside the subgraph).
+
+## 7. Routing Agent / Multi-Source
 **Goal:** Intelligent tool/source selection.  
 **Deliverable:** Router between vector DB and web search.
 
-## 6. MCP-Powered Agent
+## 8. MCP-Powered Agent
 **Goal:** Modern tool architecture.  
-**Sources:** `mcplanggraph` folder + [MCP_PROJECTS_oo3](https://github.com/yash9614/MCP_PROJECTS_oo3)  
+**Sources:** MCP session folders + [MCP_PROJECTS_oo3](https://github.com/yash9614/MCP_PROJECTS_oo3)  
 **Deliverable:** LangGraph agent calling tools via MCP.
 
-## 7. Capstone (Optional but Impressive)
-Pick one:
-- AI News Agent (`ainewsagentic`)
-- Blog Generation pipeline
-- Multi-agent research system
+## 9. Agents with Memory & Streaming (Optional but strong)
+**Goal:** Production feel.  
+**Source:** Telusko `agents` project (programs 6–9) + memory programs 31–34  
+**Deliverable:** Agent with checkpointer memory and streaming output.
 
 ---
 
-**Interview tip:** Be ready to explain the design decisions, failure modes, and how you would productionize each project (observability, evaluation, cost control, guardrails).
+**Interview tip:** Be ready to explain the design decisions, failure modes, and how you would productionize each project (observability, evaluation, cost control, guardrails, durable checkpoints).
