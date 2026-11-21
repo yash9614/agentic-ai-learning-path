@@ -38,13 +38,15 @@ Work the folders in order. Each has a detailed README with concepts, what to stu
 
 **Updated with Telusko Advance LangGraph (Nov 2026):** memory management, subgraphs (as node or invoke), Commands, Send/map-reduce, dynamic nodes/edges, parallel interrupts, interrupts inside tools, and the dedicated agents project (tools, recursion, streaming).
 
-**External progressive tutorials:** See [reference/EXTERNAL-LANGGRAPH-TUTORIALS.md](reference/EXTERNAL-LANGGRAPH-TUTORIALS.md) for the 10-notebook series (sourangshupal) and the diagram-rich notebooks (d-hackmt).
+**External progressive tutorials:** See [reference/EXTERNAL-LANGGRAPH-TUTORIALS.md](reference/EXTERNAL-LANGGRAPH-TUTORIALS.md).
 
-**RAG resources:** See [reference/EXTERNAL-RAG-RESOURCES.md](reference/EXTERNAL-RAG-RESOURCES.md) for RAGAS, query transformations, and production toolkits.
+**RAG resources:** See [reference/EXTERNAL-RAG-RESOURCES.md](reference/EXTERNAL-RAG-RESOURCES.md).
 
-**Starred & forked:** See [reference/STARRED-AND-FORKED-RESOURCES.md](reference/STARRED-AND-FORKED-RESOURCES.md) for high-value material from your starred list (interview questions, GenAI_Agents, awesome-llm-apps, rag-from-scratch, etc.).
+**Scanned external sources:** See [reference/EXTERNAL-SCANNED-RESOURCES.md](reference/EXTERNAL-SCANNED-RESOURCES.md) (sunnysavita10, entbappy Complete-Agentic-AI-Course, Yash-Kavaiya stars including awesome-generative-ai-guide).
 
-**Session map:** See [reference/TELUSKO-SESSION-MAP.md](reference/TELUSKO-SESSION-MAP.md) for the explicit mapping of every Telusko session folder to these stages.
+**Starred & forked:** See [reference/STARRED-AND-FORKED-RESOURCES.md](reference/STARRED-AND-FORKED-RESOURCES.md).
+
+**Session map:** See [reference/TELUSKO-SESSION-MAP.md](reference/TELUSKO-SESSION-MAP.md).
 
 ---
 
@@ -123,8 +125,8 @@ Add packages as needed with `uv add package-name`.
 4. Practice the interview questions out loud.
 5. Cross-reference the RAG and GenAI repos for deeper foundations.
 6. For the latest Telusko code, see the course repo session folders and the [session map](reference/TELUSKO-SESSION-MAP.md).
-7. Supplement with the progressive tutorials listed in [reference/EXTERNAL-LANGGRAPH-TUTORIALS.md](reference/EXTERNAL-LANGGRAPH-TUTORIALS.md).
-8. Check [reference/STARRED-AND-FORKED-RESOURCES.md](reference/STARRED-AND-FORKED-RESOURCES.md) for additional project ideas and interview banks.
+7. Supplement with the progressive tutorials in [reference/EXTERNAL-LANGGRAPH-TUTORIALS.md](reference/EXTERNAL-LANGGRAPH-TUTORIALS.md).
+8. Check [reference/STARRED-AND-FORKED-RESOURCES.md](reference/STARRED-AND-FORKED-RESOURCES.md) and [reference/EXTERNAL-SCANNED-RESOURCES.md](reference/EXTERNAL-SCANNED-RESOURCES.md) for additional project ideas and interview banks.
 
 Start with `01-foundations-agents/README.md`.
 
