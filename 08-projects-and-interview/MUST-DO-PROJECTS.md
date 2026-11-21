@@ -17,10 +17,13 @@ Complete these in order. They map directly to common interview expectations and 
 **Source:** Telusko agents project (`2_agents_with_tools.py`, `3_agent_with_multiple_tools.py`) or original ReAct notebooks  
 **Deliverable:** Agent that uses 2+ tools and stops correctly.
 
-## 4. Agentic / Corrective RAG
+## 4. Agentic / Corrective RAG (with Production Retrieval)
 **Goal:** Retrieval that can self-correct.  
-**Source:** Original agentic/corrective RAG notebooks  
-**Deliverable:** Grade → rewrite → re-retrieve loop.
+**Source:** Original agentic/corrective RAG notebooks + production RAG guide  
+**Deliverable:** Grade → rewrite → re-retrieve loop.  
+**Stronger version:** Use hybrid search (dense + BM25 + RRF) and cross-encoder reranking inside the retrieval step. Measure with a small evaluation set (Hit@K + groundedness score).
+
+See the production patterns in the Generative AI learning path: [PRODUCTION-RAG-GUIDE.md](https://github.com/yash9614/generative-ai-learning-path/blob/main/03-RAG-Systems/PRODUCTION-RAG-GUIDE.md).
 
 ## 5. Human-in-the-Loop Agent
 **Goal:** Safe agents.  
@@ -48,4 +51,4 @@ Complete these in order. They map directly to common interview expectations and 
 
 ---
 
-**Interview tip:** Be ready to explain the design decisions, failure modes, and how you would productionize each project (observability, evaluation, cost control, guardrails, durable checkpoints).
+**Interview tip:** Be ready to explain the design decisions, failure modes, and how you would productionize each project (observability, evaluation, cost control, guardrails, durable checkpoints, hybrid retrieval, reranking).

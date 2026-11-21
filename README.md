@@ -28,7 +28,7 @@ Original raw dump is left untouched: [D-Downloads-sagenic-ri-btcamp-with-alngjra
 | 1 | `01-foundations-agents` | Agents vs Agentic AI, core concepts | High |
 | 2 | `02-langgraph-basics` | State graphs, nodes, edges, reducers, subgraphs, memory, commands | High |
 | 3 | `03-react-and-tool-calling` | ReAct agents, multi-tool chatbots | Critical |
-| 4 | `04-agentic-rag` | Corrective, Adaptive, Agentic RAG loops | Critical |
+| 4 | `04-agentic-rag` | Corrective, Adaptive, Agentic RAG loops + production retrieval | Critical |
 | 5 | `05-human-in-the-loop` | HITL patterns, parallel interrupts, tool interrupts, durable checkpoints | High |
 | 6 | `06-workflows-and-routing` | Workflows, routers, subgraphs, dynamic nodes, Send/map-reduce | High |
 | 7 | `07-mcp-integration` | LangGraph + MCP, tool servers | High |
@@ -37,6 +37,8 @@ Original raw dump is left untouched: [D-Downloads-sagenic-ri-btcamp-with-alngjra
 Work the folders in order. Each has a detailed README with concepts, what to study, interview questions, and links back to source notebooks.
 
 **Updated with Telusko Advance LangGraph (Nov 2026):** memory management, subgraphs (as node or invoke), Commands, Send/map-reduce, dynamic nodes/edges, parallel interrupts, interrupts inside tools, and the dedicated agents project (tools, recursion, streaming).
+
+**Production RAG integration:** Agentic RAG modules now explicitly include hybrid search, reranking, evaluation, and citations. See the guide in the Generative AI repo.
 
 **Session map:** See [reference/TELUSKO-SESSION-MAP.md](reference/TELUSKO-SESSION-MAP.md) for the explicit mapping of every Telusko session folder to these stages.
 
@@ -49,7 +51,7 @@ These give the highest ROI for interviews and real systems. Complete them.
 1. **Simple LangGraph State Graph** — Understand nodes, edges, state.
 2. **Parallel + Reducer Graph** — Fan-out that merges via reducer.
 3. **ReAct Tool-Calling Agent** — Wikipedia / Arxiv / search tools with conditional routing.
-4. **Agentic / Corrective RAG Loop** — Grade documents, rewrite query, retrieve again.
+4. **Agentic / Corrective RAG Loop** — Grade documents, rewrite query, retrieve again (prefer hybrid + rerank).
 5. **Human-in-the-Loop Approval Agent** — Interrupt for sensitive actions (including parallel and tool-level), durable with SqliteSaver.
 6. **Subgraph Workflow** — Parent that embeds or invokes a subgraph.
 7. **Multi-Tool Chatbot with Routing** — Route between vector store, web search, SQL.
@@ -70,6 +72,7 @@ Details and source file pointers are in `08-projects-and-interview/MUST-DO-PROJE
 - Tool calling / function calling (including tools inside graphs)
 - State management (TypedDict, dataclass, Pydantic)
 - Agentic RAG loops (grade → rewrite → retrieve)
+- Production retrieval inside agents (hybrid + RRF, reranking, metadata filters, citations, evaluation)
 - Human-in-the-loop (interrupts, parallel interrupts, checkpoints, resume)
 - Commands, Send/map-reduce, dynamic nodes
 - Routing and multi-agent patterns
@@ -114,7 +117,7 @@ Add packages as needed with `uv add package-name`.
 2. Open the linked notebooks from the original dump and run them.
 3. Complete the Must-Do Projects.
 4. Practice the interview questions out loud.
-5. Cross-reference the RAG and GenAI repos for deeper foundations.
+5. Cross-reference the RAG and GenAI repos for deeper foundations (especially the Production RAG Guide).
 6. For the latest Telusko code, see the course repo session folders and the [session map](reference/TELUSKO-SESSION-MAP.md).
 
 Start with `01-foundations-agents/README.md`.

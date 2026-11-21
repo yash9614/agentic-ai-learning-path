@@ -20,6 +20,10 @@
 | **Agentic RAG** | Agent controls retrieval (decide, decompose, re-retrieve) |
 | **CRAG** | Grades retrieval and corrects (rewrite / web search) |
 | **Self-RAG** | Model decides whether to retrieve and critiques its own answer |
+| **Hybrid Search** | Combines dense (vector) and sparse (BM25) retrieval |
+| **Reciprocal Rank Fusion (RRF)** | Robust way to merge rankings from multiple retrievers |
+| **Reranking** | Cross-encoder re-scores top candidates for higher precision |
+| **Stable Chunk ID** | Deterministic hash so updates don’t create duplicates |
 | **MCP** | Standard protocol for tool servers |
 | **HITL** | Human-in-the-loop via interrupts (can live in nodes or tools) |
 | **Harness** | Guardrails, step limits, validation, observability around the model |

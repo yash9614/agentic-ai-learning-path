@@ -17,6 +17,20 @@ Variants you will see:
 - Adaptive RAG
 - Self-reflective RAG
 
+## Production Retrieval Inside Agentic Loops
+Agentic loops only help if the underlying retrieval is strong. Combine the loop with production techniques:
+
+- **Hybrid search + Reciprocal Rank Fusion** (dense + BM25) before grading
+- **Cross-encoder reranking** of the top candidates
+- **Metadata filters** (status, date, department, region)
+- **Query transformation** as the rewrite step
+- **Citations** in the final answer
+- **Evaluation** of both the retrieval stage (Hit@K) and the generation stage (groundedness via LLM judge)
+
+These make the grade → rewrite → re-retrieve cycle far more effective.
+
+**Detailed production patterns:** See the companion guide in the Generative AI repo → [PRODUCTION-RAG-GUIDE.md](https://github.com/yash9614/generative-ai-learning-path/blob/main/03-RAG-Systems/PRODUCTION-RAG-GUIDE.md).
+
 ## Course Mapping (Telusko)
 
 Production RAG progression lives in these folders:
@@ -45,7 +59,10 @@ These cover hybrid search, metadata filters, reranking, corrective/adaptive patt
 4. When would you rewrite a query vs fall back to web search?
 5. How do you prevent infinite retrieval loops?
 6. What evaluation metrics matter for an agentic RAG system?
+7. How does hybrid search + reranking improve the quality of the documents you grade?
+8. Why are stable chunk IDs and metadata important in a production agentic system?
 
 ## Must-Do
 
-Implement a grade → rewrite → retrieve loop. Compare answer quality to simple RAG. Optionally add hybrid search or reranking from the production RAG folders.
+Implement a grade → rewrite → retrieve loop. Compare answer quality to simple RAG.  
+**Upgrade:** Add hybrid search (dense + BM25 + RRF) and cross-encoder reranking inside the retrieval step, then measure the difference with a small evaluation set.
