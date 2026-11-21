@@ -40,6 +40,10 @@ Work the folders in order. Each has a detailed README with concepts, what to stu
 
 **External progressive tutorials:** See [reference/EXTERNAL-LANGGRAPH-TUTORIALS.md](reference/EXTERNAL-LANGGRAPH-TUTORIALS.md) for the 10-notebook series (sourangshupal) and the diagram-rich notebooks (d-hackmt).
 
+**RAG resources:** See [reference/EXTERNAL-RAG-RESOURCES.md](reference/EXTERNAL-RAG-RESOURCES.md) for RAGAS, query transformations, and production toolkits.
+
+**Starred & forked:** See [reference/STARRED-AND-FORKED-RESOURCES.md](reference/STARRED-AND-FORKED-RESOURCES.md) for high-value material from your starred list (interview questions, GenAI_Agents, awesome-llm-apps, rag-from-scratch, etc.).
+
 **Session map:** See [reference/TELUSKO-SESSION-MAP.md](reference/TELUSKO-SESSION-MAP.md) for the explicit mapping of every Telusko session folder to these stages.
 
 ---
@@ -120,6 +124,7 @@ Add packages as needed with `uv add package-name`.
 5. Cross-reference the RAG and GenAI repos for deeper foundations.
 6. For the latest Telusko code, see the course repo session folders and the [session map](reference/TELUSKO-SESSION-MAP.md).
 7. Supplement with the progressive tutorials listed in [reference/EXTERNAL-LANGGRAPH-TUTORIALS.md](reference/EXTERNAL-LANGGRAPH-TUTORIALS.md).
+8. Check [reference/STARRED-AND-FORKED-RESOURCES.md](reference/STARRED-AND-FORKED-RESOURCES.md) for additional project ideas and interview banks.
 
 Start with `01-foundations-agents/README.md`.
 
