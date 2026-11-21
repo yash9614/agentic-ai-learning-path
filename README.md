@@ -38,7 +38,7 @@ Work the folders in order. Each has a detailed README with concepts, what to stu
 
 **Updated with Telusko Advance LangGraph (Nov 2026):** memory management, subgraphs (as node or invoke), Commands, Send/map-reduce, dynamic nodes/edges, parallel interrupts, interrupts inside tools, and the dedicated agents project (tools, recursion, streaming).
 
-**Production RAG integration:** Agentic RAG modules now explicitly include hybrid search, reranking, evaluation, and citations. See the guide in the Generative AI repo.
+**External progressive tutorials:** See [reference/EXTERNAL-LANGGRAPH-TUTORIALS.md](reference/EXTERNAL-LANGGRAPH-TUTORIALS.md) for the 10-notebook series (sourangshupal) and the diagram-rich notebooks (d-hackmt).
 
 **Session map:** See [reference/TELUSKO-SESSION-MAP.md](reference/TELUSKO-SESSION-MAP.md) for the explicit mapping of every Telusko session folder to these stages.
 
@@ -75,7 +75,7 @@ Details and source file pointers are in `08-projects-and-interview/MUST-DO-PROJE
 - Production retrieval inside agents (hybrid + RRF, reranking, metadata filters, citations, evaluation)
 - Human-in-the-loop (interrupts, parallel interrupts, checkpoints, resume)
 - Commands, Send/map-reduce, dynamic nodes
-- Routing and multi-agent patterns
+- Routing and multi-agent patterns (including orchestrator-worker, evaluator-optimizer)
 - Memory and persistence (InMemorySaver, SqliteSaver)
 - MCP (Model Context Protocol) as tool interface
 
@@ -117,8 +117,9 @@ Add packages as needed with `uv add package-name`.
 2. Open the linked notebooks from the original dump and run them.
 3. Complete the Must-Do Projects.
 4. Practice the interview questions out loud.
-5. Cross-reference the RAG and GenAI repos for deeper foundations (especially the Production RAG Guide).
+5. Cross-reference the RAG and GenAI repos for deeper foundations.
 6. For the latest Telusko code, see the course repo session folders and the [session map](reference/TELUSKO-SESSION-MAP.md).
+7. Supplement with the progressive tutorials listed in [reference/EXTERNAL-LANGGRAPH-TUTORIALS.md](reference/EXTERNAL-LANGGRAPH-TUTORIALS.md).
 
 Start with `01-foundations-agents/README.md`.
 
