@@ -25,7 +25,7 @@
 15. How does tool calling work?
 16. What is Agentic RAG? How is it different from standard RAG?
 17. Explain Corrective RAG (CRAG) vs Self-RAG.
-18. How do you evaluate an agentic system?
+18. How do you evaluate an agentic system? (Name RAGAS metrics.)
 19. How do you prevent infinite loops in agents?
 
 ## Multi-Agent & Frameworks
@@ -49,4 +49,8 @@
 
 **Practice tip:** Answer out loud. Draw the graph. Explain trade-offs.
 
-Full interview set: [makan_m/learning-concepts/15-interview-questions.md](https://github.com/yash9614/makan_m/blob/main/learning-concepts/15-interview-questions.md)
+## External interview banks
+
+- Full curated set in this ecosystem: [makan_m/learning-concepts/15-interview-questions.md](https://github.com/yash9614/makan_m/blob/main/learning-concepts/15-interview-questions.md)
+- Large AI Engineering cheat sheet (starred): [amitshekhariitbhu/ai-engineering-interview-questions](https://github.com/amitshekhariitbhu/ai-engineering-interview-questions) — covers LLM fundamentals, RAG, Agents, LLMOps, evaluation, system design, safety.
+- See also `reference/STARRED-AND-FORKED-RESOURCES.md` for more project and tutorial sources.
