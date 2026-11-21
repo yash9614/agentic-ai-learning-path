@@ -21,6 +21,12 @@ Original raw dump is left untouched: [D-Downloads-sagenic-ri-btcamp-with-alngjra
 
 ---
 
+## 🚀 Unified Learning Map (Start Here for Cross-Repo Compass)
+
+**[reference/UNIFIED-LEARNING-MAP.md](reference/UNIFIED-LEARNING-MAP.md)** — Single reference synthesizing the highest-signal resources (Telusko course, sourangshupal progressive tutorials, sunnysavita10 Full-Stack GenAI Bootcamp, and this path). Includes core overlaps, recommended unified path aligned to these stages, must-do projects, and concept cheat sheet.
+
+---
+
 ## Learning Path Overview
 
 | Stage | Folder | Focus | Priority |
@@ -127,6 +133,7 @@ Add packages as needed with `uv add package-name`.
 6. For the latest Telusko code, see the course repo session folders and the [session map](reference/TELUSKO-SESSION-MAP.md).
 7. Supplement with the progressive tutorials in [reference/EXTERNAL-LANGGRAPH-TUTORIALS.md](reference/EXTERNAL-LANGGRAPH-TUTORIALS.md).
 8. Check [reference/STARRED-AND-FORKED-RESOURCES.md](reference/STARRED-AND-FORKED-RESOURCES.md) and [reference/EXTERNAL-SCANNED-RESOURCES.md](reference/EXTERNAL-SCANNED-RESOURCES.md) for additional project ideas and interview banks.
+9. Use the [Unified Learning Map](reference/UNIFIED-LEARNING-MAP.md) as your cross-repo compass.
 
 Start with `01-foundations-agents/README.md`.
 
