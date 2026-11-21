@@ -33,12 +33,14 @@ These make the grade → rewrite → re-retrieve cycle far more effective.
 
 ## External Resources
 
-- **RAGAS evaluation**: [divesh-sse/RAGAS](https://github.com/divesh-sse/RAGAS) — notebook that isolates Faithfulness, Answer Relevancy, Context Precision/Recall, Answer Correctness, Tool Correctness + Streamlit demo.
-- **Query transformations**: [d-hackmt/query-transformations](https://github.com/d-hackmt/query-transformations) — rewriting, step-back, sub-query, multi-query + RRF, routing, compression, filters, agentic choice of transform.
-- **Production toolkit**: [laxmimerit/RAGWire](https://github.com/laxmimerit/RAGWire) — multi-format ingest → Qdrant, LLM metadata, hybrid search, SHA256 dedup.
-- **Local agentic RAG**: [laxmimerit/Agentic-RAG-with-LangGraph-and-Ollama](https://github.com/laxmimerit/Agentic-RAG-with-LangGraph-and-Ollama) and [Langchain-v1-Agents](https://github.com/laxmimerit/Langchain-v1-Agents) — LangGraph + Ollama, memory, interrupts, reflection, multi-agent.
+- **RAGAS evaluation**: [divesh-sse/RAGAS](https://github.com/divesh-sse/RAGAS)
+- **Query transformations**: [d-hackmt/query-transformations](https://github.com/d-hackmt/query-transformations)
+- **Production toolkit**: [laxmimerit/RAGWire](https://github.com/laxmimerit/RAGWire)
+- **Local agentic RAG**: [laxmimerit/Agentic-RAG-with-LangGraph-and-Ollama](https://github.com/laxmimerit/Agentic-RAG-with-LangGraph-and-Ollama) and [Langchain-v1-Agents](https://github.com/laxmimerit/Langchain-v1-Agents)
+- **Course-style CRAG / Self-RAG / Advanced RAG**: [entbappy/Complete-Agentic-AI-Course](https://github.com/entbappy/Complete-Agentic-AI-Course) (folders: Advanced-RAG, Corrective-Rag-CRAG, Self-Rag-Code)
+- **Advanced RAG implementations**: [sunnysavita10/Generative-AI-Indepth-Basic-to-Advance](https://github.com/sunnysavita10/Generative-AI-Indepth-Basic-to-Advance) (hybrid, rerank from scratch, multimodal)
 
-See `reference/EXTERNAL-RAG-RESOURCES.md` for the full summary.
+See `reference/EXTERNAL-RAG-RESOURCES.md` and `reference/EXTERNAL-SCANNED-RESOURCES.md` for full summaries.
 
 ## Course Mapping (Telusko)
 
@@ -49,16 +51,13 @@ Production RAG progression lives in these folders:
 - `Building a Complete RAG Application 04-10-2026`
 - `Secure Enterprise RAG Assistant 10-10-2026`
 
-These cover hybrid search, metadata filters, reranking, corrective/adaptive patterns, citation, and evaluation.
-
 ## Key Notebooks
 
 - `1-AgenticRAG.ipynb`
 - `2-CorrectiveRAG.ipynb`
 - `4-AdaptiveRAG.ipynb`
-- PDFs: `35-39-RAGS.pdf`, `37.1-Corrective+RAGs.pdf`
 
-**Cross-link:** Deep RAG foundations are in [Ultimate-RAG-Bootcamp](https://github.com/yash9614/Ultimate-RAG-Bootcamp-LangChain-LangGraph-LangSmith) (especially modules 06 and 07).
+**Cross-link:** Deep RAG foundations are in [Ultimate-RAG-Bootcamp](https://github.com/yash9614/Ultimate-RAG-Bootcamp-LangChain-LangGraph-LangSmith).
 
 ## Interview Questions
 
@@ -75,4 +74,4 @@ These cover hybrid search, metadata filters, reranking, corrective/adaptive patt
 ## Must-Do
 
 Implement a grade → rewrite → retrieve loop. Compare answer quality to simple RAG.  
-**Upgrade:** Add hybrid search (dense + BM25 + RRF) and cross-encoder reranking inside the retrieval step, then measure the difference with a small evaluation set (RAGAS or simple Hit@K + LLM-as-judge). Optionally try multi-query or step-back as the rewrite strategy.
+**Upgrade:** Add hybrid search and cross-encoder reranking, then measure with a small evaluation set. Optionally try multi-query or step-back.
