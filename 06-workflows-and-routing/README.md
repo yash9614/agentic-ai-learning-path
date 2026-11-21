@@ -9,19 +9,30 @@ Not everything needs full autonomy. Many production systems are **workflows** (p
 - Different specialized agents
 - Different tools based on intent
 
-## Advanced Patterns (Telusko Advance LangGraph)
+## Classic Workflow Patterns (from d-hackmt/langgraph-life)
+
+- **Prompt chaining** — sequential nodes, each improving the previous output
+- **Parallelization** — fan-out independent tasks, then join
+- **Routing** — classifier node sends to specialized workers
+- **Orchestrator-worker** — central orchestrator delegates to specialist subgraphs or tools
+- **Evaluator-optimizer** — generate → critique → refine loop (with retry cap)
+
+## Advanced Patterns (Telusko + sourangshupal)
 
 - **Subgraphs**: Compose workflows by embedding one graph inside another. State is mapped explicitly when used as a node.
 - **Parallel subgraphs** and output schemas.
 - **Dynamic nodes and conditional edges**: Decide structure at runtime.
-- **Commands**: `Command(update=..., goto=...)` for explicit control instead of (or in addition to) edges.
-- **Send / map-reduce**: Fan-out work to many nodes dynamically, then reduce.
+- **Commands**: `Command(update=..., goto=...)` for explicit control.
+- **Send / map-reduce**: Fan-out work dynamically, then reduce.
 - Graph as a tool: wrap a compiled workflow so an agent can invoke it.
+- Multi-agent systems (supervisor or peer) — see sourangshupal notebook 09.
 
 ## Key Source Materials
 
 - Telusko: `Advance LangGraph 14-11-2026` and `(part - 2) 15-11-2026` (programs 24–42, agents project)
-- Original: `4- Workflows` folder, workflow PDFs
+- [d-hackmt/langgraph-life](https://github.com/d-hackmt/langgraph-life) folder `04-workflows`
+- [sourangshupal/langraph-tutorials](https://github.com/sourangshupal/langraph-tutorials) notebooks 06, 08, 09
+- See also `reference/EXTERNAL-LANGGRAPH-TUTORIALS.md`
 
 ## Interview Questions
 
@@ -31,7 +42,9 @@ Not everything needs full autonomy. Many production systems are **workflows** (p
 4. Explain how state flows when a subgraph is attached as a node vs invoked.
 5. What is the difference between a static conditional edge and a dynamic one?
 6. How would you implement a map-reduce style fan-out in LangGraph?
+7. Walk through an orchestrator-worker pattern. When is it better than a pure ReAct loop?
+8. How does an evaluator-optimizer loop differ from a simple retry?
 
 ## Must-Do
 
-Build a parent graph that invokes a subgraph (or uses it as a node) for one step, then add a dynamic conditional edge based on state.
+Build a parent graph that invokes a subgraph (or uses it as a node) for one step, then add a dynamic conditional edge based on state. Implement at least one classic pattern (orchestrator-worker or evaluator-optimizer).
