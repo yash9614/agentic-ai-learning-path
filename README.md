@@ -25,6 +25,8 @@ Original raw dump is left untouched: [D-Downloads-sagenic-ri-btcamp-with-alngjra
 
 **[reference/UNIFIED-LEARNING-MAP.md](reference/UNIFIED-LEARNING-MAP.md)** — Single reference synthesizing the highest-signal resources (Telusko course, sourangshupal progressive tutorials, sunnysavita10 Full-Stack GenAI Bootcamp, and this path). Includes core overlaps, recommended unified path aligned to these stages, must-do projects, and concept cheat sheet.
 
+**Latest notes:** [reference/NOTE-12-HITL-MULTIAGENT-MAPREDUCE.md](reference/NOTE-12-HITL-MULTIAGENT-MAPREDUCE.md) — Clean transcription of handwritten notes on HITL (`interrupt` + `Command(resume)`), Map-Reduce with the Send API, Conditional Routing via Command, and Supervisor + subgraph patterns.
+
 ---
 
 ## Learning Path Overview
@@ -134,6 +136,7 @@ Add packages as needed with `uv add package-name`.
 7. Supplement with the progressive tutorials in [reference/EXTERNAL-LANGGRAPH-TUTORIALS.md](reference/EXTERNAL-LANGGRAPH-TUTORIALS.md).
 8. Check [reference/STARRED-AND-FORKED-RESOURCES.md](reference/STARRED-AND-FORKED-RESOURCES.md) and [reference/EXTERNAL-SCANNED-RESOURCES.md](reference/EXTERNAL-SCANNED-RESOURCES.md) for additional project ideas and interview banks.
 9. Use the [Unified Learning Map](reference/UNIFIED-LEARNING-MAP.md) as your cross-repo compass.
+10. Review the latest session notes: [NOTE-12-HITL-MULTIAGENT-MAPREDUCE.md](reference/NOTE-12-HITL-MULTIAGENT-MAPREDUCE.md).
 
 Start with `01-foundations-agents/README.md`.
 
