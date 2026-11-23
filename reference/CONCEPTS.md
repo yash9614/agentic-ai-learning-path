@@ -35,4 +35,12 @@
 - Deep Agents = harness
 - CrewAI = role-based team abstraction
 
-Deeper notes: [makan_m/learning-concepts](https://github.com/yash9614/makan_m/tree/main/learning-concepts) (modules 10–20)
+## Local Concept Notes
+
+Detailed notes moved from makan_m:
+
+- [concepts/agentic-mindset.md](concepts/agentic-mindset.md)
+- [concepts/deep-agents.md](concepts/deep-agents.md)
+- [concepts/multi-agent-patterns.md](concepts/multi-agent-patterns.md)
+
+Full set: [makan_m/learning-concepts](https://github.com/yash9614/makan_m/tree/main/learning-concepts)
