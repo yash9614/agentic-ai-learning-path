@@ -15,6 +15,7 @@ Original raw dump is left untouched: [D-Downloads-sagenic-ri-btcamp-with-alngjra
 | Generative AI Learning Path | Broad GenAI + LangChain foundations + projects | [generative-ai-learning-path](https://github.com/yash9614/generative-ai-learning-path) |
 | Ultimate RAG Bootcamp | Deep RAG techniques, hybrid retrieval, evaluation, agentic RAG | [Ultimate-RAG-Bootcamp](https://github.com/yash9614/Ultimate-RAG-Bootcamp-LangChain-LangGraph-LangSmith) |
 | MCP Projects | Hands-on MCP servers, clients, SSE, multi-server | [MCP_PROJECTS_oo3](https://github.com/yash9614/MCP_PROJECTS_oo3) |
+| Learning Concepts (makan_m) | Deep notes on agents, RAG, production patterns | [makan_m/learning-concepts](https://github.com/yash9614/makan_m/tree/main/learning-concepts) |
 | This repo | Agentic systems, LangGraph, agents, HITL, workflows | You are here |
 
 **Recommended order:** GenAI foundations → RAG depth → Agentic systems (this repo) → MCP integration.
@@ -26,6 +27,8 @@ Original raw dump is left untouched: [D-Downloads-sagenic-ri-btcamp-with-alngjra
 **[reference/UNIFIED-LEARNING-MAP.md](reference/UNIFIED-LEARNING-MAP.md)** — Single reference synthesizing the highest-signal resources (Telusko course, sourangshupal progressive tutorials, sunnysavita10 Full-Stack GenAI Bootcamp, and this path). Includes core overlaps, recommended unified path aligned to these stages, must-do projects, and concept cheat sheet.
 
 **Latest notes:** [reference/NOTE-12-HITL-MULTIAGENT-MAPREDUCE.md](reference/NOTE-12-HITL-MULTIAGENT-MAPREDUCE.md) — Clean transcription of handwritten notes on HITL (`interrupt` + `Command(resume)`), Map-Reduce with the Send API, Conditional Routing via Command, and Supervisor + subgraph patterns.
+
+**Moved high-signal concepts:** [reference/concepts/](reference/concepts/) — Agentic mindset, Deep Agents, multi-agent patterns (from makan_m).
 
 ---
 
@@ -137,6 +140,7 @@ Add packages as needed with `uv add package-name`.
 8. Check [reference/STARRED-AND-FORKED-RESOURCES.md](reference/STARRED-AND-FORKED-RESOURCES.md) and [reference/EXTERNAL-SCANNED-RESOURCES.md](reference/EXTERNAL-SCANNED-RESOURCES.md) for additional project ideas and interview banks.
 9. Use the [Unified Learning Map](reference/UNIFIED-LEARNING-MAP.md) as your cross-repo compass.
 10. Review the latest session notes: [NOTE-12-HITL-MULTIAGENT-MAPREDUCE.md](reference/NOTE-12-HITL-MULTIAGENT-MAPREDUCE.md).
+11. Read the moved high-signal concepts in [reference/concepts/](reference/concepts/).
 
 Start with `01-foundations-agents/README.md`.
 
