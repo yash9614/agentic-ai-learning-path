@@ -24,11 +24,11 @@ Original raw dump is left untouched: [D-Downloads-sagenic-ri-btcamp-with-alngjra
 
 ## 🚀 Unified Learning Map (Start Here for Cross-Repo Compass)
 
-**[reference/UNIFIED-LEARNING-MAP.md](reference/UNIFIED-LEARNING-MAP.md)** — Single reference synthesizing the highest-signal resources (Telusko course, sourangshupal progressive tutorials, sunnysavita10 Full-Stack GenAI Bootcamp, and this path). Includes core overlaps, recommended unified path aligned to these stages, must-do projects, and concept cheat sheet.
+**[reference/UNIFIED-LEARNING-MAP.md](reference/UNIFIED-LEARNING-MAP.md)** — Single reference synthesizing the highest-signal resources.
 
-**Latest notes:** [reference/NOTE-12-HITL-MULTIAGENT-MAPREDUCE.md](reference/NOTE-12-HITL-MULTIAGENT-MAPREDUCE.md) — Clean transcription of handwritten notes on HITL (`interrupt` + `Command(resume)`), Map-Reduce with the Send API, Conditional Routing via Command, and Supervisor + subgraph patterns.
+**Latest notes:** [reference/NOTE-12-HITL-MULTIAGENT-MAPREDUCE.md](reference/NOTE-12-HITL-MULTIAGENT-MAPREDUCE.md)
 
-**Moved high-signal concepts:** [reference/concepts/](reference/concepts/) — Agentic mindset, Deep Agents, multi-agent patterns (from makan_m).
+**Moved high-signal concepts:** [reference/concepts/](reference/concepts/)
 
 ---
 
@@ -38,7 +38,7 @@ Original raw dump is left untouched: [D-Downloads-sagenic-ri-btcamp-with-alngjra
 |-------|--------|-------|----------|
 | 1 | `01-foundations-agents` | Agents vs Agentic AI, core concepts | High |
 | 2 | `02-langgraph-basics` | State graphs, nodes, edges, reducers, subgraphs, memory, commands | High |
-| 3 | `03-react-and-tool-calling` | ReAct agents, multi-tool chatbots | Critical |
+| 3 | `03-react-and-tool-calling` | ReAct agents, multi-tool chatbots, supervisor, handoffs, deep agents | Critical |
 | 4 | `04-agentic-rag` | Corrective, Adaptive, Agentic RAG loops + production retrieval | Critical |
 | 5 | `05-human-in-the-loop` | HITL patterns, parallel interrupts, tool interrupts, durable checkpoints | High |
 | 6 | `06-workflows-and-routing` | Workflows, routers, subgraphs, dynamic nodes, Send/map-reduce | High |
@@ -47,13 +47,13 @@ Original raw dump is left untouched: [D-Downloads-sagenic-ri-btcamp-with-alngjra
 
 Work the folders in order. Each has a detailed README with concepts, what to study, interview questions, and links back to source notebooks.
 
-**Updated with Telusko Advance LangGraph (Nov 2026):** memory management, subgraphs (as node or invoke), Commands, Send/map-reduce, dynamic nodes/edges, parallel interrupts, interrupts inside tools, and the dedicated agents project (tools, recursion, streaming).
+**Updated with Telusko (through 23 Nov 2026):** Advance LangGraph + Agents in LangGraph 21-11 (streaming modes, human approval, plan-and-execute, multi-agent supervisor, handoffs, orchestrator-workers, deep agents) + Agentic AI Final Project 22-11 (Meal Planner Kitchen Team: multi-agent + RAG with pgvector + MCP + Postgres short/long-term memory + FastAPI + frontend).
 
 **External progressive tutorials:** See [reference/EXTERNAL-LANGGRAPH-TUTORIALS.md](reference/EXTERNAL-LANGGRAPH-TUTORIALS.md).
 
 **RAG resources:** See [reference/EXTERNAL-RAG-RESOURCES.md](reference/EXTERNAL-RAG-RESOURCES.md).
 
-**Scanned external sources:** See [reference/EXTERNAL-SCANNED-RESOURCES.md](reference/EXTERNAL-SCANNED-RESOURCES.md) (sunnysavita10, entbappy Complete-Agentic-AI-Course, Yash-Kavaiya stars including awesome-generative-ai-guide).
+**Scanned external sources:** See [reference/EXTERNAL-SCANNED-RESOURCES.md](reference/EXTERNAL-SCANNED-RESOURCES.md).
 
 **Starred & forked:** See [reference/STARRED-AND-FORKED-RESOURCES.md](reference/STARRED-AND-FORKED-RESOURCES.md).
 
@@ -73,7 +73,8 @@ These give the highest ROI for interviews and real systems. Complete them.
 6. **Subgraph Workflow** — Parent that embeds or invokes a subgraph.
 7. **Multi-Tool Chatbot with Routing** — Route between vector store, web search, SQL.
 8. **MCP-Enabled Agent** — Expose tools via MCP and call them from LangGraph.
-9. **End-to-End Workflow** (optional) — News agent, blog generator, or multi-agent research with memory and streaming.
+9. **Telusko Final Project — Meal Planner Kitchen Team** — Multi-agent supervisor + RAG + MCP + Postgres memory + FastAPI.
+10. **End-to-End Workflow** (optional) — News agent, blog generator, or multi-agent research with memory and streaming.
 
 Details and source file pointers are in `08-projects-and-interview/MUST-DO-PROJECTS.md`.
 
@@ -92,8 +93,8 @@ Details and source file pointers are in `08-projects-and-interview/MUST-DO-PROJE
 - Production retrieval inside agents (hybrid + RRF, reranking, metadata filters, citations, evaluation)
 - Human-in-the-loop (interrupts, parallel interrupts, checkpoints, resume)
 - Commands, Send/map-reduce, dynamic nodes
-- Routing and multi-agent patterns (including orchestrator-worker, evaluator-optimizer)
-- Memory and persistence (InMemorySaver, SqliteSaver)
+- Routing and multi-agent patterns (supervisor, handoffs, orchestrator-worker, evaluator-optimizer, deep agents)
+- Memory and persistence (InMemorySaver, SqliteSaver, Postgres store)
 - MCP (Model Context Protocol) as tool interface
 
 ---
