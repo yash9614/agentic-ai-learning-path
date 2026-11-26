@@ -55,6 +55,8 @@ Work the folders in order. Each has a detailed README with concepts, what to stu
 
 **Scanned external sources:** See [reference/EXTERNAL-SCANNED-RESOURCES.md](reference/EXTERNAL-SCANNED-RESOURCES.md).
 
+**entbappy projects:** See [reference/ENTBAPPY-RESOURCES.md](reference/ENTBAPPY-RESOURCES.md) (supervisor + MCP + guardrails + HITL, enterprise agentic RAG with private KB + web fallback).
+
 **Starred & forked:** See [reference/STARRED-AND-FORKED-RESOURCES.md](reference/STARRED-AND-FORKED-RESOURCES.md).
 
 **Session map:** See [reference/TELUSKO-SESSION-MAP.md](reference/TELUSKO-SESSION-MAP.md).
@@ -142,6 +144,7 @@ Add packages as needed with `uv add package-name`.
 9. Use the [Unified Learning Map](reference/UNIFIED-LEARNING-MAP.md) as your cross-repo compass.
 10. Review the latest session notes: [NOTE-12-HITL-MULTIAGENT-MAPREDUCE.md](reference/NOTE-12-HITL-MULTIAGENT-MAPREDUCE.md).
 11. Read the moved high-signal concepts in [reference/concepts/](reference/concepts/).
+12. Study entbappy multi-agent and enterprise RAG patterns: [reference/ENTBAPPY-RESOURCES.md](reference/ENTBAPPY-RESOURCES.md).
 
 Start with `01-foundations-agents/README.md`.
 
