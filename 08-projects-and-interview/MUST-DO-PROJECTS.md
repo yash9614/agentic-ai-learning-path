@@ -55,7 +55,11 @@ See the production patterns in the Generative AI learning path: [PRODUCTION-RAG-
 **Deliverable:** Run the Travel Planning Agent (Streamlit direct + FastAPI + MCP). Add one new tool or knowledge document. Understand the dual-path design.  
 **Most important skill demonstrated:** Hybrid agents that combine structured tools + RAG + MCP as a reusable interface.
 
-See detailed analysis and interview questions: [makan_m project-streak-notes.md](https://github.com/yash9614/makan_m/blob/main/learning-concepts/sources/project-streak-notes.md)
+## 11. Telusko Final Project — Meal Planner Kitchen Team (High priority)
+**Goal:** Multi-agent supervisor + RAG + MCP + short/long-term memory in one system.  
+**Source:** `Agentic AI Final Project 22-11-2026/Project`  
+**Deliverable:** Run the full stack (Docker Postgres + pgvector, MCP server, CLI or FastAPI frontend). Understand how the Head Chef supervisor routes to recipe (RAG), nutrition (MCP), and grocery (store) agents, and how short-term (checkpointer) and long-term (store) memory are isolated by user.  
+**Key skills:** Multi-agent supervisor, RAG with pgvector, MCP tools, Postgres-backed memory, FastAPI + frontend, message trimming.
 
 ---
 
