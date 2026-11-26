@@ -62,11 +62,20 @@
 43. What is the role of the dual path (Streamlit direct vs FastAPI + MCP) in project 00?
 44. How would you make the Travel Planning Agent production-ready?
 
+## entbappy Projects (Multi-Agent + Agentic RAG)
+
+45. In an enterprise IT support copilot, why grade private knowledge-base evidence before falling back to web search? How do you avoid infinite rewrite loops?
+46. How would you add input guardrails before a multi-agent supervisor graph runs?
+47. Where would you place a HITL approval gate in a multi-agent travel planner (after draft plan vs after each specialist)?
+48. How do you log decision paths (e.g. Router → KB → GOOD → Generate) for auditability in an agentic system?
+49. Difference between agent isolation in the Meal Planner Final Project and the supervisor + MCP pattern in entbappy’s multi-agent system?
+
 **Practice tip:** Answer out loud. Draw the graph. Explain trade-offs.
 
 ## External interview banks
 
 - Full curated set in this ecosystem: [makan_m/learning-concepts/15-interview-questions.md](https://github.com/yash9614/makan_m/blob/main/learning-concepts/15-interview-questions.md)
 - Project Streak analysis + questions: [makan_m/learning-concepts/sources/project-streak-notes.md](https://github.com/yash9614/makan_m/blob/main/learning-concepts/sources/project-streak-notes.md)
+- entbappy multi-agent and agentic RAG projects: [reference/ENTBAPPY-RESOURCES.md](reference/ENTBAPPY-RESOURCES.md)
 - Large AI Engineering cheat sheet (starred): [amitshekhariitbhu/ai-engineering-interview-questions](https://github.com/amitshekhariitbhu/ai-engineering-interview-questions)
 - See also `reference/STARRED-AND-FORKED-RESOURCES.md` for more project and tutorial sources.
