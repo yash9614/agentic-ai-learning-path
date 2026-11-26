@@ -49,6 +49,14 @@ See the production patterns in the Generative AI learning path: [PRODUCTION-RAG-
 **Source:** Telusko `agents` project (programs 6–9) + memory programs 31–34  
 **Deliverable:** Agent with checkpointer memory and streaming output.
 
+## 10. Full-Stack Hybrid Agent (Project Streak reference)
+**Goal:** End-to-end practical application with dual paths.  
+**Source:** [yash9614/project_streak_](https://github.com/yash9614/project_streak_) — especially `projects/00-travel-planning-agent`  
+**Deliverable:** Run the Travel Planning Agent (Streamlit direct + FastAPI + MCP). Add one new tool or knowledge document. Understand the dual-path design.  
+**Most important skill demonstrated:** Hybrid agents that combine structured tools + RAG + MCP as a reusable interface.
+
+See detailed analysis and interview questions: [makan_m project-streak-notes.md](https://github.com/yash9614/makan_m/blob/main/learning-concepts/sources/project-streak-notes.md)
+
 ---
 
 **Interview tip:** Be ready to explain the design decisions, failure modes, and how you would productionize each project (observability, evaluation, cost control, guardrails, durable checkpoints, hybrid retrieval, reranking).
