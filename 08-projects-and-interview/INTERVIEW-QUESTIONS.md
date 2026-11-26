@@ -47,10 +47,20 @@
 31. What guardrails would you put around a production agent?
 32. How do you design least-privilege tools for a production agent (e.g., SQL + vector + API)?
 
+## Project Streak Specific (Full-Stack Hybrid Patterns)
+
+33. Explain the difference between calling tools directly vs exposing them via an MCP server. When would you choose each?
+34. Walk through the request flow in the Travel Planning Agent when a user asks for today’s date and Kyoto tips (tool + RAG).
+35. How does semantic routing work in the e-commerce assistant, and what are the trade-offs vs pure LLM classification?
+36. Why use structured outputs (Pydantic + `parse`) instead of asking the model to return JSON and parsing it yourself?
+37. What is the role of the dual path (Streamlit direct vs FastAPI + MCP) in project 00?
+38. How would you make the Travel Planning Agent production-ready?
+
 **Practice tip:** Answer out loud. Draw the graph. Explain trade-offs.
 
 ## External interview banks
 
 - Full curated set in this ecosystem: [makan_m/learning-concepts/15-interview-questions.md](https://github.com/yash9614/makan_m/blob/main/learning-concepts/15-interview-questions.md)
+- Project Streak analysis + questions: [makan_m/learning-concepts/sources/project-streak-notes.md](https://github.com/yash9614/makan_m/blob/main/learning-concepts/sources/project-streak-notes.md)
 - Large AI Engineering cheat sheet (starred): [amitshekhariitbhu/ai-engineering-interview-questions](https://github.com/amitshekhariitbhu/ai-engineering-interview-questions) — covers LLM fundamentals, RAG, Agents, LLMOps, evaluation, system design, safety.
 - See also `reference/STARRED-AND-FORKED-RESOURCES.md` for more project and tutorial sources.
