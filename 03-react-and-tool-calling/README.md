@@ -17,11 +17,18 @@ In LangGraph this is typically a model node (with `bind_tools`) + a `ToolNode` +
 - Recursion / depth limits
 - Graph used as a tool
 - Agent with memory (checkpointer)
-- Streaming output modes
+- Streaming modes (values, debug, checkpoint, tasks, messages)
+- Human approval
+- Plan-and-execute
+- Multi-agent supervisor
+- Agent handoffs
+- Orchestrator-workers
+- Deep agents
 
 ## Key Source Materials
 
 - Telusko: `Advance LangGraph (part - 2) 15-11-2026/agents` (programs 1–9)
+- Telusko: `Agents in Langgraph 21-11-2026/agents` (programs 1–21, including supervisor, handoffs, deep agent)
 - Original dump: `7-ReActAgents.ipynb`, `6-chatbotswithmultipletools.ipynb`
 - PDFs: `14-tool.pdf`, `15-ChatwithMultipletools.pdf`
 
@@ -34,7 +41,9 @@ In LangGraph this is typically a model node (with `bind_tools`) + a `ToolNode` +
 5. How would you add a new tool to an existing agent?
 6. How do you stream intermediate steps or final tokens from an agent?
 7. Difference between an agent that has its own checkpointer vs one that is stateless?
+8. What is a multi-agent supervisor pattern? How do handoffs work?
+9. When would you use a deep agent vs a simple ReAct agent?
 
 ## Must-Do Project
 
-Build a ReAct agent with at least two tools (e.g., search + calculator or Wikipedia). Add conditional routing so it stops when done. Optionally add memory and streaming.
+Build a ReAct agent with at least two tools. Add conditional routing so it stops when done. Optionally add memory, streaming, and a simple supervisor or handoff.
