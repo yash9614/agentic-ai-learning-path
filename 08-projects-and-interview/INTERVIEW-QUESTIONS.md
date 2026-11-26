@@ -33,28 +33,34 @@
 20. CrewAI sequential vs hierarchical?
 21. What is a Deep Agent and when would you use it?
 22. Difference between LangGraph, CrewAI, and Deep Agents?
+23. What is a multi-agent supervisor pattern? How does the Head Chef route to specialists in the Meal Planner project?
+24. How do agent handoffs work? When would you use them vs a pure supervisor?
+25. Difference between orchestrator-worker and a simple ReAct loop?
 
 ## Production & Advanced
 
-23. What is Human-in-the-Loop and when do you use it?
-24. How do you handle two interrupts that fire in the same step?
-25. Can an interrupt live inside a tool? When is that useful?
-26. Why SQLite checkpointer over in-memory for production HITL?
-27. What is MCP and why is it useful?
-28. How would you add observability to an agent?
-29. Difference between workflows and autonomous agents?
-30. How do you control cost and latency in agent systems?
-31. What guardrails would you put around a production agent?
-32. How do you design least-privilege tools for a production agent (e.g., SQL + vector + API)?
+26. What is Human-in-the-Loop and when do you use it?
+27. How do you handle two interrupts that fire in the same step?
+28. Can an interrupt live inside a tool? When is that useful?
+29. Why SQLite checkpointer over in-memory for production HITL?
+30. What is MCP and why is it useful?
+31. How would you add observability to an agent?
+32. Difference between workflows and autonomous agents?
+33. How do you control cost and latency in agent systems?
+34. What guardrails would you put around a production agent?
+35. How do you design least-privilege tools for a production agent (e.g., SQL + vector + API)?
+36. Name three streaming modes in LangGraph and when you would use each (values, messages, debug, checkpoint, tasks).
+37. How do short-term (checkpointer + thread_id) and long-term (store + user_id) memory differ? How do you keep them isolated per user?
+38. In the Meal Planner Final Project, how is RAG (pgvector) combined with MCP tools and per-user store data under one supervisor?
 
 ## Project Streak Specific (Full-Stack Hybrid Patterns)
 
-33. Explain the difference between calling tools directly vs exposing them via an MCP server. When would you choose each?
-34. Walk through the request flow in the Travel Planning Agent when a user asks for today’s date and Kyoto tips (tool + RAG).
-35. How does semantic routing work in the e-commerce assistant, and what are the trade-offs vs pure LLM classification?
-36. Why use structured outputs (Pydantic + `parse`) instead of asking the model to return JSON and parsing it yourself?
-37. What is the role of the dual path (Streamlit direct vs FastAPI + MCP) in project 00?
-38. How would you make the Travel Planning Agent production-ready?
+39. Explain the difference between calling tools directly vs exposing them via an MCP server. When would you choose each?
+40. Walk through the request flow in the Travel Planning Agent when a user asks for today’s date and Kyoto tips (tool + RAG).
+41. How does semantic routing work in the e-commerce assistant, and what are the trade-offs vs pure LLM classification?
+42. Why use structured outputs (Pydantic + `parse`) instead of asking the model to return JSON and parsing it yourself?
+43. What is the role of the dual path (Streamlit direct vs FastAPI + MCP) in project 00?
+44. How would you make the Travel Planning Agent production-ready?
 
 **Practice tip:** Answer out loud. Draw the graph. Explain trade-offs.
 
@@ -62,5 +68,5 @@
 
 - Full curated set in this ecosystem: [makan_m/learning-concepts/15-interview-questions.md](https://github.com/yash9614/makan_m/blob/main/learning-concepts/15-interview-questions.md)
 - Project Streak analysis + questions: [makan_m/learning-concepts/sources/project-streak-notes.md](https://github.com/yash9614/makan_m/blob/main/learning-concepts/sources/project-streak-notes.md)
-- Large AI Engineering cheat sheet (starred): [amitshekhariitbhu/ai-engineering-interview-questions](https://github.com/amitshekhariitbhu/ai-engineering-interview-questions) — covers LLM fundamentals, RAG, Agents, LLMOps, evaluation, system design, safety.
+- Large AI Engineering cheat sheet (starred): [amitshekhariitbhu/ai-engineering-interview-questions](https://github.com/amitshekhariitbhu/ai-engineering-interview-questions)
 - See also `reference/STARRED-AND-FORKED-RESOURCES.md` for more project and tutorial sources.
