@@ -57,7 +57,9 @@ Work the folders in order. Each has a detailed README with concepts, what to stu
 
 **entbappy projects:** See [reference/ENTBAPPY-RESOURCES.md](reference/ENTBAPPY-RESOURCES.md).
 
-**sunnysavita Full-Stack Bootcamp:** See [reference/SUNNYSAVITA-FULLSTACK-GENAI-BOOTCAMP.md](reference/SUNNYSAVITA-FULLSTACK-GENAI-BOOTCAMP.md) (class-to-stage mapping, MM-RAG, multi-agent, guardrails, DeepEval).
+**sunnysavita Full-Stack Bootcamp:** See [reference/SUNNYSAVITA-FULLSTACK-GENAI-BOOTCAMP.md](reference/SUNNYSAVITA-FULLSTACK-GENAI-BOOTCAMP.md).
+
+**Python for Gen AI (clean extract):** See [reference/PYTHON-FOR-GENAI-CONCEPTS.md](reference/PYTHON-FOR-GENAI-CONCEPTS.md) — 24-chapter technical overview, production patterns, and interview topics (no analogies).
 
 **Starred & forked:** See [reference/STARRED-AND-FORKED-RESOURCES.md](reference/STARRED-AND-FORKED-RESOURCES.md).
 
@@ -148,6 +150,7 @@ Add packages as needed with `uv add package-name`.
 11. Read the moved high-signal concepts in [reference/concepts/](reference/concepts/).
 12. Study entbappy multi-agent and enterprise RAG patterns: [reference/ENTBAPPY-RESOURCES.md](reference/ENTBAPPY-RESOURCES.md).
 13. Use the Full-Stack GenAI Bootcamp class mapping: [reference/SUNNYSAVITA-FULLSTACK-GENAI-BOOTCAMP.md](reference/SUNNYSAVITA-FULLSTACK-GENAI-BOOTCAMP.md).
+14. Review the clean GenAI handbook extract: [reference/PYTHON-FOR-GENAI-CONCEPTS.md](reference/PYTHON-FOR-GENAI-CONCEPTS.md).
 
 Start with `01-foundations-agents/README.md`.
 
