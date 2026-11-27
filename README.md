@@ -47,7 +47,7 @@ Original raw dump is left untouched: [D-Downloads-sagenic-ri-btcamp-with-alngjra
 
 Work the folders in order. Each has a detailed README with concepts, what to study, interview questions, and links back to source notebooks.
 
-**Updated with Telusko (through 23 Nov 2026):** Advance LangGraph + Agents in LangGraph 21-11 (streaming modes, human approval, plan-and-execute, multi-agent supervisor, handoffs, orchestrator-workers, deep agents) + Agentic AI Final Project 22-11 (Meal Planner Kitchen Team: multi-agent + RAG with pgvector + MCP + Postgres short/long-term memory + FastAPI + frontend).
+**Updated with Telusko (through 23 Nov 2026):** Advance LangGraph + Agents in LangGraph 21-11 + Agentic AI Final Project 22-11.
 
 **External progressive tutorials:** See [reference/EXTERNAL-LANGGRAPH-TUTORIALS.md](reference/EXTERNAL-LANGGRAPH-TUTORIALS.md).
 
@@ -55,7 +55,9 @@ Work the folders in order. Each has a detailed README with concepts, what to stu
 
 **Scanned external sources:** See [reference/EXTERNAL-SCANNED-RESOURCES.md](reference/EXTERNAL-SCANNED-RESOURCES.md).
 
-**entbappy projects:** See [reference/ENTBAPPY-RESOURCES.md](reference/ENTBAPPY-RESOURCES.md) (supervisor + MCP + guardrails + HITL, enterprise agentic RAG with private KB + web fallback).
+**entbappy projects:** See [reference/ENTBAPPY-RESOURCES.md](reference/ENTBAPPY-RESOURCES.md).
+
+**sunnysavita Full-Stack Bootcamp:** See [reference/SUNNYSAVITA-FULLSTACK-GENAI-BOOTCAMP.md](reference/SUNNYSAVITA-FULLSTACK-GENAI-BOOTCAMP.md) (class-to-stage mapping, MM-RAG, multi-agent, guardrails, DeepEval).
 
 **Starred & forked:** See [reference/STARRED-AND-FORKED-RESOURCES.md](reference/STARRED-AND-FORKED-RESOURCES.md).
 
@@ -145,6 +147,7 @@ Add packages as needed with `uv add package-name`.
 10. Review the latest session notes: [NOTE-12-HITL-MULTIAGENT-MAPREDUCE.md](reference/NOTE-12-HITL-MULTIAGENT-MAPREDUCE.md).
 11. Read the moved high-signal concepts in [reference/concepts/](reference/concepts/).
 12. Study entbappy multi-agent and enterprise RAG patterns: [reference/ENTBAPPY-RESOURCES.md](reference/ENTBAPPY-RESOURCES.md).
+13. Use the Full-Stack GenAI Bootcamp class mapping: [reference/SUNNYSAVITA-FULLSTACK-GENAI-BOOTCAMP.md](reference/SUNNYSAVITA-FULLSTACK-GENAI-BOOTCAMP.md).
 
 Start with `01-foundations-agents/README.md`.
 
