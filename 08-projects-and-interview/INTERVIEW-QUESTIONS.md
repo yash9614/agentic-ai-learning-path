@@ -70,6 +70,18 @@
 48. How do you log decision paths (e.g. Router → KB → GOOD → Generate) for auditability in an agentic system?
 49. Difference between agent isolation in the Meal Planner Final Project and the supervisor + MCP pattern in entbappy’s multi-agent system?
 
+## From Python for Gen AI Handbook (Clean Extract)
+
+50. Why use hybrid search (BM25 + dense vectors + RRF) instead of pure vector search?
+51. What is parent-child / contextual chunking and when does it help retrieval?
+52. How does a cyclic LangGraph StateGraph differ from a linear chain? Where do checkpoints fit?
+53. Trade-offs of LoRA/QLoRA versus full fine-tuning for domain adaptation?
+54. Name three RAGAS metrics and what each measures. How do you reduce judge bias?
+55. What is semantic caching in a FastAPI + SSE setup and when does it save cost/latency?
+56. How does GraphRAG (triples, multi-hop walks) differ from standard vector RAG?
+57. What is PagedAttention in vLLM and why does it improve throughput?
+58. What is test-time compute in reasoning models (o3 / R1) and how does it differ from standard inference?
+
 **Practice tip:** Answer out loud. Draw the graph. Explain trade-offs.
 
 ## External interview banks
@@ -77,5 +89,6 @@
 - Full curated set in this ecosystem: [makan_m/learning-concepts/15-interview-questions.md](https://github.com/yash9614/makan_m/blob/main/learning-concepts/15-interview-questions.md)
 - Project Streak analysis + questions: [makan_m/learning-concepts/sources/project-streak-notes.md](https://github.com/yash9614/makan_m/blob/main/learning-concepts/sources/project-streak-notes.md)
 - entbappy multi-agent and agentic RAG projects: [reference/ENTBAPPY-RESOURCES.md](reference/ENTBAPPY-RESOURCES.md)
+- Python for Gen AI clean concepts: [reference/PYTHON-FOR-GENAI-CONCEPTS.md](reference/PYTHON-FOR-GENAI-CONCEPTS.md)
 - Large AI Engineering cheat sheet (starred): [amitshekhariitbhu/ai-engineering-interview-questions](https://github.com/amitshekhariitbhu/ai-engineering-interview-questions)
 - See also `reference/STARRED-AND-FORKED-RESOURCES.md` for more project and tutorial sources.
