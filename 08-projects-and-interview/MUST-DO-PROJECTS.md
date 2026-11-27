@@ -1,6 +1,6 @@
 # Must-Do Projects
 
-Complete these in order. They map directly to common interview expectations and the Telusko course progression.
+Complete these in order. They map to interview expectations, Telusko course progression, and production patterns from the handbook extract.
 
 ## 1. Simple State Graph
 **Goal:** Master LangGraph fundamentals.  
@@ -15,15 +15,15 @@ Complete these in order. They map directly to common interview expectations and 
 ## 3. ReAct Tool-Calling Agent
 **Goal:** Production-style agent with tools.  
 **Source:** Telusko agents project (`2_agents_with_tools.py`, `3_agent_with_multiple_tools.py`) or original ReAct notebooks  
-**Deliverable:** Agent that uses 2+ tools and stops correctly.
+**Deliverable:** Agent that uses 2+ tools and stops correctly. Add streaming if time allows.
 
 ## 4. Agentic / Corrective RAG (with Production Retrieval)
 **Goal:** Retrieval that can self-correct.  
-**Source:** Original agentic/corrective RAG notebooks + production RAG guide  
+**Source:** Original agentic/corrective RAG notebooks + production RAG guide + [PYTHON-FOR-GENAI-CONCEPTS.md](../reference/PYTHON-FOR-GENAI-CONCEPTS.md)  
 **Deliverable:** Grade → rewrite → re-retrieve loop.  
-**Stronger version:** Use hybrid search (dense + BM25 + RRF) and cross-encoder reranking inside the retrieval step. Measure with a small evaluation set (Hit@K + groundedness score).
+**Stronger version:** Use hybrid search (dense + BM25 + RRF), cross-encoder reranking, and parent-child chunking. Measure with Hit@K + RAGAS.
 
-See the production patterns in the Generative AI learning path: [PRODUCTION-RAG-GUIDE.md](https://github.com/yash9614/generative-ai-learning-path/blob/main/03-RAG-Systems/PRODUCTION-RAG-GUIDE.md).
+See [PRODUCTION-RAG-GUIDE.md](https://github.com/yash9614/generative-ai-learning-path/blob/main/03-RAG-Systems/PRODUCTION-RAG-GUIDE.md).
 
 ## 5. Human-in-the-Loop Agent
 **Goal:** Safe agents.  
@@ -44,23 +44,28 @@ See the production patterns in the Generative AI learning path: [PRODUCTION-RAG-
 **Sources:** MCP session folders + [MCP_PROJECTS_oo3](https://github.com/yash9614/MCP_PROJECTS_oo3)  
 **Deliverable:** LangGraph agent calling tools via MCP.
 
-## 9. Agents with Memory & Streaming (Optional but strong)
+## 9. Agents with Memory & Streaming
 **Goal:** Production feel.  
 **Source:** Telusko `agents` project (programs 6–9) + memory programs 31–34  
-**Deliverable:** Agent with checkpointer memory and streaming output.
+**Deliverable:** Agent with checkpointer memory and streaming output. Understand short-term (thread_id) vs long-term (user_id / store).
 
-## 10. Full-Stack Hybrid Agent (Project Streak reference)
+## 10. Full-Stack Hybrid Agent (Project Streak)
 **Goal:** End-to-end practical application with dual paths.  
 **Source:** [yash9614/project_streak_](https://github.com/yash9614/project_streak_) — especially `projects/00-travel-planning-agent`  
-**Deliverable:** Run the Travel Planning Agent (Streamlit direct + FastAPI + MCP). Add one new tool or knowledge document. Understand the dual-path design.  
-**Most important skill demonstrated:** Hybrid agents that combine structured tools + RAG + MCP as a reusable interface.
+**Deliverable:** Run the Travel Planning Agent (Streamlit direct + FastAPI + MCP). Add one new tool or knowledge document. Understand the dual-path design.
 
-## 11. Telusko Final Project — Meal Planner Kitchen Team (High priority)
+## 11. Telusko Final Project — Meal Planner (High priority)
 **Goal:** Multi-agent supervisor + RAG + MCP + short/long-term memory in one system.  
 **Source:** `Agentic AI Final Project 22-11-2026/Project`  
-**Deliverable:** Run the full stack (Docker Postgres + pgvector, MCP server, CLI or FastAPI frontend). Understand how the Head Chef supervisor routes to recipe (RAG), nutrition (MCP), and grocery (store) agents, and how short-term (checkpointer) and long-term (store) memory are isolated by user.  
+**Deliverable:** Run the full stack (Docker Postgres + pgvector, MCP server, CLI or FastAPI frontend). Understand how the supervisor routes to specialists and how memory is isolated by user.  
 **Key skills:** Multi-agent supervisor, RAG with pgvector, MCP tools, Postgres-backed memory, FastAPI + frontend, message trimming.
+
+## Optional Advanced
+
+- GraphRAG multi-hop over a small knowledge graph (see handbook extract).
+- Semantic caching in front of a FastAPI + SSE agent endpoint.
+- Evaluate one of the above with RAGAS (Faithfulness, Answer Relevancy, Context Precision/Recall).
 
 ---
 
-**Interview tip:** Be ready to explain the design decisions, failure modes, and how you would productionize each project (observability, evaluation, cost control, guardrails, durable checkpoints, hybrid retrieval, reranking).
+**Interview tip:** Be ready to explain design decisions, failure modes, and how you would productionize each project (observability, evaluation, cost control, guardrails, durable checkpoints, hybrid retrieval, reranking).
